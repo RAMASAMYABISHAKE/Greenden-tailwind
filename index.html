@@ -30,13 +30,25 @@
   <!-- navbar -->
   <div class="bg-green-200 flex justify-between p-3 items-center shadow-xl sticky top-0 z-10">
     <div class="text-xl">GREENDEN</div>
-    <div class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    <div class="md:hidden cursor-pointer"><svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
         stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
       </svg>
     </div>
     <div class=" hidden gap-5  md:flex">
+      <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="index.html">Home</a></P>
+      <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="product.html">Products</a></P>
+      <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="contact.html">Contact</a></P>
+    </div>
+  </div>
+  <!-- side navbar -->
+  <div id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000" style="width: 40%;height: 100%; right:-50%;"   >
+    <div class="p-5 text-right " id="side-text">
+      <p class="inline cursor-pointer " >X</p>
+    </div>
+   
+    <div class="flex flex-col items-center gap-10">
       <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="index.html">Home</a></P>
       <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="product.html">Products</a></P>
       <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="contact.html">Contact</a></P>
@@ -99,23 +111,20 @@
   <div class="p-4 text-center">
     <h1 class="font-bold mt-5 text-3xl">Best Seller</h1>
     <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5  ">
-      <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 1.png "  
-        >
+      <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 1.png ">
         <h1 class="md:text-center">Rose plant</h1>
         <p>$20</p>
       </div>
       <div>
-        <img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 2.png" >
+        <img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 2.png">
         <h1>Rose plant</h1>
         <p>$20</p>
       </div>
-      <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 3.png"
-        >
+      <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 3.png">
         <h1>Rose plant</h1>
         <p>$20</p>
       </div>
-      <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 4.png" 
-        >
+      <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 4.png">
         <h1>Rose plant</h1>
         <p>$20</p>
       </div>
@@ -124,12 +133,24 @@
   <!-- customer reviews -->
   <section class="mt-5 p-4 ">
     <h1 class="font-bold text-3xl text-center">Customer Reviews</h1>
-    <div class="bg-green-900 p-3 m-4"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aut aliquid earum sequi deleniti molestias accusamus fugit ullam doloribus incidunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officiis quo quasi eaque aliquid delectus asperiores veniam. Amet, iure provident.</p>
-    <p class="text-yellow-500">Genny mathew</p></div>
-    <div class="bg-green-900 p-3 m-4"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eum illum quas molestiae ab ducimus iste voluptatibus id quibusdam aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officiis quo quasi eaque aliquid delectus asperiores veniam. Amet, iure provident.</p>
-      <p class="text-yellow-500">Jim</p></div>
-      <div class="bg-green-900 p-3 m-4"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni fugit porro dolores commodi libero soluta quasi enim expedita ipsa quis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officiis quo quasi eaque aliquid delectus asperiores veniam. Amet, iure provident.</p>
-        <p class="text-yellow-500">Amir</p></div>
+    <div class="bg-green-900 p-3 m-4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aut aliquid earum sequi deleniti molestias
+        accusamus fugit ullam doloribus incidunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        officiis quo quasi eaque aliquid delectus asperiores veniam. Amet, iure provident.</p>
+      <p class="text-yellow-500">Genny mathew</p>
+    </div>
+    <div class="bg-green-900 p-3 m-4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eum illum quas molestiae ab ducimus iste
+        voluptatibus id quibusdam aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officiis quo
+        quasi eaque aliquid delectus asperiores veniam. Amet, iure provident.</p>
+      <p class="text-yellow-500">Jim</p>
+    </div>
+    <div class="bg-green-900 p-3 m-4">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni fugit porro dolores commodi libero soluta quasi
+        enim expedita ipsa quis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officiis quo quasi eaque
+        aliquid delectus asperiores veniam. Amet, iure provident.</p>
+      <p class="text-yellow-500">Amir</p>
+    </div>
   </section>
   <!-- join our news letter -->
   <section class="text-center mt-5">
@@ -145,6 +166,7 @@
     <p class="mt-5">@ 2021 Greenday.com</p>
 
   </section>
+  <script src="index.js"></script>
 </body>
 
 </html>

@@ -28,7 +28,7 @@
     <!-- navbar -->
   <div class="bg-green-200 flex justify-between p-3 items-center shadow-xl sticky top-0 z-10">
     <div class="text-xl">GREENDEN</div>
-    <div class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    <div class="md:hidden cursor-pointer"><svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
         stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
@@ -40,14 +40,26 @@
       <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="contact.html">Contact</a></P>
     </div>
   </div>
+  <!-- side navbar -->
+  <div id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000" style="width: 40%;height: 100%; right:-50%;"   >
+    <div class="p-5 text-right " id="side-text">
+      <p class="inline cursor-pointer " >X</p>
+    </div>
+   
+    <div class="flex flex-col items-center gap-10">
+      <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="index.html">Home</a></P>
+      <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="product.html">Products</a></P>
+      <P class="hover:underline hover:text-black text-gray-600 cursor-pointer"><a href="contact.html">Contact</a></P>
+    </div>
+  </div>
   <!-- our products -->
     <section class="text-center">
         <h1 class="mt-5 font-bold text-3xl">Our Products</h1>
-        <input class="border border-black p-3 mt-5 " style="width: 80%;" type="text" placeholder="Search for a Product...">
+        <input id="search" class="border border-black p-3 mt-5 " style="width: 80%;" type="text" placeholder="Search for a Product...">
     </section>
     <div class="p-4 text-center">
        
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5  ">
+        <div id="container"  class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5  ">
           <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 1.png "  
             >
             <h1 class="md:text-center">Rose plant</h1>
@@ -55,37 +67,37 @@
           </div>
           <div>
             <img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 2.png" >
-            <h1>Rose plant</h1>
+            <h1>Lilly plant</h1>
             <p>$20</p>
           </div>
           <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 3.png"
             >
-            <h1>Rose plant</h1>
+            <h1>Hibiscus plant</h1>
             <p>$20</p>
           </div>
           <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 4.png" 
             >
-            <h1>Rose plant</h1>
+            <h1>Medicinal plant</h1>
             <p>$20</p>
           </div>
           <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 1.png "  
             >
-            <h1 class="md:text-center">Rose plant</h1>
+            <h1 class="md:text-center">Tulasi plant</h1>
             <p>$20</p>
           </div>
           <div>
             <img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 2.png" >
-            <h1>Rose plant</h1>
+            <h1>Cuscutta plant</h1>
             <p>$20</p>
           </div>
           <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 3.png"
             >
-            <h1>Rose plant</h1>
+            <h1>Malar plant</h1>
             <p>$20</p>
           </div>
           <div><img class="inline hover:shadow-xl hover:transform hover:-translate-y-2" src="./images/best-seller 4.png" 
             >
-            <h1>Rose plant</h1>
+            <h1>illy plant</h1>
             <p>$20</p>
           </div>
         </div>
@@ -97,5 +109,6 @@
     <p class="mt-5">@ 2021 Greenday.com</p>
 
   </section>
+  <script src="product.js"></script>
 </body>
 </html>
